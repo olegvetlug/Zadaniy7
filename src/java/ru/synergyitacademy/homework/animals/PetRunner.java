@@ -4,7 +4,7 @@ import ru.synergyitacademy.homework.animals.specialized.Cat;
 import ru.synergyitacademy.homework.animals.specialized.Cow;
 import ru.synergyitacademy.homework.animals.specialized.Dog;
 import ru.synergyitacademy.homework.animals.specialized.Rooster;
-
+import ru.synergyitacademy.homework.animals.specialized.Nanny;
 import java.nio.channels.ScatteringByteChannel;
 
 public class PetRunner {
