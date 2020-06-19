@@ -2,30 +2,28 @@ package ru.synergyitacademy.homework.animals.specialized;
 
 import ru.synergyitacademy.homework.animals.Pet;
 
-public final class Dog extends Pet {
-
+public class Rooster extends Pet {
     private String nickName = "Неизвестный";
     private String sort;
 
     {
-        nickName = "Безымянный";
+        nickName = "not_name";
         Integer amountSort = AMOUNT_SORT;
     }
 
-    public Dog() {
-        super("Собака");
+    public Rooster() {
+        super("Петух");
     }
 
-    public Dog(String name) {
+    public Rooster(String name) {
         this();
         this.nickName = name;
     }
 
     @Override
-    public void voice() {
-        System.out.printf("%s издает гав-гав!\n", this.nickName);
-    }
-
+    public  void voice( ) {
+        System.out.printf("%s издает ку-ка-ре-ку!\n", this.nickName);
+    };
     public String getNickName() {
         return nickName;
     }

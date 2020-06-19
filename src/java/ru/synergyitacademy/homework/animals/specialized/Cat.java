@@ -2,30 +2,27 @@ package ru.synergyitacademy.homework.animals.specialized;
 
 import ru.synergyitacademy.homework.animals.Pet;
 
-public final class Dog extends Pet {
-
+public class Cat extends Pet {
     private String nickName = "Неизвестный";
     private String sort;
 
     {
-        nickName = "Безымянный";
+        nickName = "no name";
         Integer amountSort = AMOUNT_SORT;
     }
 
-    public Dog() {
-        super("Собака");
+    public Cat() {
+        super("Кошка");
     }
 
-    public Dog(String name) {
+    public Cat(String name) {
         this();
         this.nickName = name;
     }
-
     @Override
-    public void voice() {
-        System.out.printf("%s издает гав-гав!\n", this.nickName);
-    }
-
+    public  void voice( ) {
+        System.out.printf("%s издает мяу-мяу!\n", this.nickName);
+    };
     public String getNickName() {
         return nickName;
     }
@@ -42,3 +39,5 @@ public final class Dog extends Pet {
         this.sort = sort;
     }
 }
+
+
