@@ -20,38 +20,29 @@ public class PetRunner {
         dog.setColor("Черный");
         dog.setLength(0.05); // в метрах
         dog.setWidth(0.02); // в метрах
+        dog.setServe (false);
+        dog.setAge(5);
         Dog smallDog = new Dog("Крепыш");
         Cat blackCat = new Cat ("Машка");
         Rooster rooster1 = new Rooster ( "Петя" );
         Cow cow1 = new Cow ("Буренка"  );
+        cow.setHerbivore ( true );
         Nanny nanny1 = new Nanny ("Белка"  );
-        Pet[] pets = new Pet[] {dog, smallDog};
+        nanny.setHerbivore ( true );
+        Pet[] pets = new Pet[] {dog, smallDog,cat,blackCat,rooster,rooster1,cow,cow1,nanny,nanny1};
 
         for (Pet pet : pets) {
             pet.voice();
         }
-        Pet[] pets1 = new Pet[] {cat, blackCat};
 
-        for (Pet pet : pets1) {
-            pet.voice();
-        }
-        Pet[] pets2 = new Pet[] {rooster,rooster1};
-        for (Pet pet : pets2) {
-            pet.voice();
-        }
-        Pet[] pets3 = new Pet[] {cow,cow1};
-        for (Pet pet : pets3) {
-            pet.voice();
-        }
-        Pet[] pets4 = new Pet[] {nanny,nanny1};
-        for (Pet pet : pets4) {
-            pet.voice();
-        }
         Person hozyain = new Person("Виталий");
         dog.eat(hozyain);
         cat.eat(hozyain);
+        cat.sleeping ();
         rooster.eat ( hozyain );
         cow.eat ( hozyain );
+        cow.mammal ();
         nanny.eat ( hozyain );
+        nanny.mammal ();
     }
 }

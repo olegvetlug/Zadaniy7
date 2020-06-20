@@ -6,6 +6,7 @@ public final class Dog extends Pet {
 
     private String nickName = "Неизвестный";
     private String sort;
+    private boolean serve;
 
     {
         nickName = "Безымянный";
@@ -20,7 +21,12 @@ public final class Dog extends Pet {
         this();
         this.nickName = name;
     }
-
+    public void setServe(boolean serve){
+        this.serve = serve;
+    }
+    public boolean getServe() {
+        return this.serve;
+    }
     @Override
     public void voice() {
         System.out.printf("%s издает гав-гав!\n", this.nickName);

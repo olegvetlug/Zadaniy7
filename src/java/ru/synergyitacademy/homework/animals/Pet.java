@@ -4,8 +4,7 @@ public abstract class Pet {
 
     protected static final Integer AMOUNT_SORT = 100;
 
-    private int id;
-    private int age;
+    private int age=0;
     private double width;
     private double length;
     private String color;
@@ -15,16 +14,26 @@ public abstract class Pet {
     public Pet(String type) {
         this.type = type;
     }
+    public void setAge(int age) {
+        this.age = age;
+    }
 
+    public int getAge() {
+        return this.age;
+    }
     public int beOlder() {
         return ++age;
+    }
+    public int beOlderByFunction(int a) {
+        this.age = this.age + a;
+        return this.age;
     }
 
     public abstract void voice();
 
-    public int getAge() {
-        return age;
-    }
+    //public int getAge() {
+        //return age;
+    //}
 
     public double getWidth() {
         return width;
